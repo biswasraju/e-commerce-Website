@@ -1,0 +1,380 @@
+#header1, #header2, #header3 {
+    position: relative;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s ease-in-out;
+  }
+  #header1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity for darkness */
+    z-index: 1;
+  }
+  #header2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity for darkness */
+    z-index: 1;
+  }
+  #header3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity for darkness */
+    z-index: 1;
+  }
+  .carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  .carousel-caption {
+    z-index: 2;
+  }
+
+  .carousel-caption button:hover {
+    background-color: rgba(0, 0, 0, 0.422);
+  }
+
+  @media (max-width: 768px) {
+    .carousel-caption h1 {
+      font-size: 1.5rem; /* Adjust heading size for smaller screens */
+    }
+    .carousel-caption p {
+      font-size: 1rem; /* Adjust paragraph size for smaller screens */
+    }
+    .carousel-caption a {
+      font-size: 0.9rem; /* Adjust link size for smaller screens */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .carousel-caption {
+      padding: 1rem;
+      text-align: center; /* Ensure content stays centered */
+    }
+  }
+
+  .carousel-caption h1, 
+  .carousel-caption p, 
+  .carousel-caption a {
+    overflow-wrap: break-word; /* Ensure long text wraps */
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+
+  @media (max-width: 451px) {
+    .carousel-caption {
+      text-align: center; /* Ensures all text content is centered */
+      padding: 1rem; /* Adjust padding for better spacing */
+    }
+    .carousel-caption h1 {
+      font-size: 1.2rem; /* Adjust font size to fit smaller screens */
+      line-height: 1.4; /* Add line height for readability */
+    }
+    .carousel-caption p {
+      font-size: 0.9rem; /* Adjust paragraph font size */
+      margin-bottom: 1rem; /* Add spacing below the paragraph */
+    }
+    .carousel-caption a {
+      font-size: 0.8rem; /* Adjust font size for the link */
+      display: block; /* Ensure it takes up full width */
+      margin-top: 1rem; /* Add spacing above the link */
+    }
+    .btn {
+      width: 100%; /* Make buttons span the full width */
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .discover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h5 {
+    margin-top: 50px;
+    color: red;
+  }
+
+  .list-group-item2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .card {
+    flex: 1 1 calc(33.333% - 20px); /* 3 cards per row */
+    max-width: 18rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-link {
+    text-decoration: none;
+  }
+
+  .font-awesome {
+    color: rgba(255, 0, 0, 0.674);
+  }
+
+  @media (max-width: 992px) {
+    .card {
+      flex: 1 1 calc(50% - 20px); /* 2 cards per row on medium screens */
+    }
+  }
+
+  @media (max-width: 576px) {
+    .card {
+      flex: 1 1 100%; /* Stack cards on small screens */
+    }
+  }
+
+/* ABOUT US */
+
+  .card-header a i {
+    font-size: 35px;
+    color: rgba(255, 0, 0, 0.674);
+  }
+
+  .about-img {
+    background-image: url("WhatsApp Image 2025-01-21 at 23.56.03_0d560ca8.jpg");
+    background-size: cover;
+    height: 400px;
+    width: 500px;
+    border: 2px solid;
+    border-radius: 25%;
+  }
+  
+  .about-us {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(255, 192, 203, 0.384);
+  }
+
+  @media (width<1296px) {
+    .about-us {
+      gap: 25px;
+    }
+  }
+  @media (width<1235px) {
+    .about-img {
+      width: 350px;
+      height: 300px;
+    }
+  }
+  @media (width<1140px) {
+    .about-img {
+      width: 300px;
+      height: 250px;
+    }
+  }
+
+  @media (width<1043px) {
+    .about-us {
+      flex-direction: column;
+      gap: 0px;
+    }
+    .about-img {
+      height: 300px;
+      width: 350px;
+      margin-top: 30px;
+    }
+  }
+
+  /* General Card Container */
+.container4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+/* Cards Styling */
+.card {
+  width: 18rem;
+  flex: 1 1 calc(33.333% - 30px);
+  max-width: 18rem;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 calc(50% - 20px); /* Two cards per row */
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    flex: 1 1 100%; /* Full width on small screens */
+    margin: 0 auto;
+  }
+}
+
+.testimonals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+  background-color: beige;
+  padding: 20px;
+  text-align: center;
+}
+
+.container5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-top: 20px;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+.testimonial-item {
+  flex: 1 1 300px; /* Flexible width */
+  max-width: 300px; /* Restricts max width */
+  text-align: center;
+  margin: 10px; /* Adds spacing around items */
+}
+
+.testimonial-item img {
+  margin-bottom: 15px;
+  object-fit: cover;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+}
+
+.testimonial-item h2 {
+  margin-bottom: 5px;
+}
+
+.testimonial-item h6 {
+  margin-bottom: 10px;
+}
+
+.testimonial-item p {
+  margin-bottom: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container5 {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-item {
+    padding: 10px;
+  }
+
+  .testimonial-item img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* BLOGS */
+
+.container6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blogss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* CONTACT US */
+
+.partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact form {
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.contact {
+  background-color: antiquewhite;
+}
+
+footer {
+  padding-left: 30px;
+  background-color: honeydew;
+}
+
+.ms-3 {
+  font-size: 35px;
+}
+
+@media (width<992px) {
+  #btn-trigger {
+    padding-top: 20px;
+  }
+}
+
+@media (width<451px) {
+  #log-in {
+   margin-top: 16px;
+  }
+}
+
+#sign-up:hover {
+  background-color: #fff;
+  color: black;
+}
+#log-in:hover {
+  background-color: #fff;
+  color: black;
+}
